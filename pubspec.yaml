@@ -1,0 +1,54 @@
+name: sakshi_vault
+description: "Sakshi Digital Evidence Vault"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+# ================= DEPENDENCIES =================
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.3
+
+  # Camera & Media
+  camera: ^0.10.5+9
+  image_picker: ^1.0.7
+  path_provider: ^2.1.2
+
+  # Security & Hashing
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+  local_auth: ^2.3.0
+
+  # PDF Report
+  pdf: ^3.10.8
+  printing: ^5.12.0
+
+
+# ================= DEV DEPENDENCIES =================
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.13.1
+
+
+# ================= FLUTTER SETTINGS =================
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/app_icon.png
+
+
+# ================= APP ICON CONFIG =================
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#ffffff"
